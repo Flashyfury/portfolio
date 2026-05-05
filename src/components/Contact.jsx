@@ -59,11 +59,14 @@ export default function Contact() {
           {/* Form */}
           <div className="glass-card p-8">
             <h3 className="text-2xl font-semibold text-white mb-6">Send a message</h3>
-            <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
+            <form action="https://formsubmit.co/anshunaskar2003@gmail.com" method="POST" className="space-y-4">
+              {/* Optional: Add a hidden input to avoid a completely empty submission if needed, but not strictly required */}
               <div>
                 <label className="block text-sm font-medium text-neutral-400 mb-1">Name</label>
                 <input 
                   type="text" 
+                  name="name"
+                  required
                   placeholder="John Doe"
                   className="w-full bg-neutral-900/50 border border-neutral-800 rounded-lg px-4 py-3 text-white placeholder:text-neutral-600 focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-all"
                 />
@@ -72,6 +75,8 @@ export default function Contact() {
                 <label className="block text-sm font-medium text-neutral-400 mb-1">Email</label>
                 <input 
                   type="email" 
+                  name="email"
+                  required
                   placeholder="john@example.com"
                   className="w-full bg-neutral-900/50 border border-neutral-800 rounded-lg px-4 py-3 text-white placeholder:text-neutral-600 focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-all"
                 />
@@ -79,13 +84,15 @@ export default function Contact() {
               <div>
                 <label className="block text-sm font-medium text-neutral-400 mb-1">Message</label>
                 <textarea 
+                  name="message"
+                  required
                   rows="4"
                   placeholder="How can I help you?"
                   className="w-full bg-neutral-900/50 border border-neutral-800 rounded-lg px-4 py-3 text-white placeholder:text-neutral-600 focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-all resize-none"
                 ></textarea>
               </div>
               <button 
-                type="button"
+                type="submit"
                 className="w-full py-3.5 px-4 bg-white text-black font-semibold rounded-lg hover:bg-neutral-200 transition-colors flex items-center justify-center gap-2 mt-4"
               >
                 Send Message
