@@ -19,9 +19,9 @@ export default function Hero() {
   return (
     <section id="home" className="pt-32 pb-20 px-6 md:px-12 max-w-6xl mx-auto">
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-        
+
         {/* Left Column: Profile Card */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
@@ -42,22 +42,22 @@ export default function Hero() {
           <div className="relative mb-8 z-10 group-hover:scale-105 transition-transform duration-500">
             {/* Rotating gradient ring */}
             <div className="absolute inset-0 bg-gradient-to-tr from-[#ff5e00] via-purple-500 to-[#c6ff00] rounded-full blur-md opacity-70 group-hover:opacity-100 group-hover:rotate-180 transition-all duration-700 scale-105"></div>
-            
-            <img 
-              src="/IMG_4794.PNG" 
-              alt="Anshu Naskar" 
+
+            <img
+              src="/IMG_4794.PNG"
+              alt="Anshu Naskar"
               className="w-40 h-40 md:w-48 md:h-48 rounded-full object-cover border-[4px] border-neutral-900 relative z-10"
             />
           </div>
-          
+
           <h2 className="text-3xl md:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-white to-neutral-500 mb-3 tracking-tight z-10">
             Anshu Naskar
           </h2>
-          
+
           <p className="text-neutral-400 font-medium mb-8 z-10 max-w-[220px] leading-relaxed">
-            Crafting digital experiences with code & coffee.
+            Crafting digital experiences with code .
           </p>
-          
+
           {/* Socials */}
           <div className="flex gap-3 mt-auto z-10 w-full justify-center">
             <SocialLink href="https://www.linkedin.com/in/anshunaskar" icon={<LinkedinIcon />} label="LinkedIn" />
@@ -68,30 +68,30 @@ export default function Hero() {
 
         {/* Right Column: Title, Stats & Colorful Bento Boxes */}
         <div className="lg:col-span-2 flex flex-col gap-6">
-          
+
           {/* Top Hero Block */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
             className="bg-neutral-900 rounded-[2rem] p-8 md:p-12 border border-neutral-800"
           >
-            <motion.span 
+            <motion.span
               animate={{ y: [0, -5, 0] }}
               transition={{ repeat: Infinity, duration: 2.5, ease: "easeInOut" }}
               className="px-4 py-2 rounded-full bg-neutral-800 text-lime-400 text-sm font-bold mb-6 inline-block uppercase tracking-wider"
             >
               Available for new opportunities
             </motion.span>
-            <motion.h1 
+            <motion.h1
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.7, delay: 0.2, type: "spring" }}
               className="text-5xl md:text-7xl font-extrabold text-white leading-none mb-10 tracking-tighter"
             >
-              SOFTWARE<br/>ENGINEER
+              SOFTWARE<br />ENGINEER
             </motion.h1>
-            
+
             {/* Stats Row */}
             <div className="flex flex-wrap gap-10 border-t border-neutral-800 pt-8">
               <motion.div whileHover={{ scale: 1.1, y: -5 }} transition={{ type: "spring", stiffness: 300 }}>
@@ -111,9 +111,9 @@ export default function Hero() {
 
           {/* Colorful Bento Boxes Row */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            
+
             {/* Orange Box */}
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
@@ -121,13 +121,13 @@ export default function Hero() {
               className="bg-[#ff5e00] rounded-[2rem] p-8 flex flex-col justify-between shadow-lg"
             >
               <div>
-                <h3 className="text-3xl font-bold text-white mb-2 leading-tight">View My<br/>Resume</h3>
+                <h3 className="text-3xl font-bold text-white mb-2 leading-tight">View My<br />Resume</h3>
                 <p className="text-white/80 font-medium">Download my full profile</p>
               </div>
               <div className="mt-12">
-                <a 
-                  href="/ANSHU_N_Resume.pdf" 
-                  target="_blank" 
+                <a
+                  href="/Anshu_Naskar_FlowCV_Resume_2026-06-10.pdf"
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="bg-white text-[#ff5e00] px-6 py-4 rounded-full font-bold inline-flex items-center gap-2 hover:bg-neutral-100 transition-transform hover:scale-105"
                 >
@@ -137,7 +137,7 @@ export default function Hero() {
             </motion.div>
 
             {/* Lime Green Box */}
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.3 }}
@@ -145,12 +145,12 @@ export default function Hero() {
               className="bg-[#c6ff00] rounded-[2rem] p-8 flex flex-col justify-between shadow-lg"
             >
               <div>
-                <h3 className="text-3xl font-bold text-black mb-2 leading-tight">Let's Work<br/>Together</h3>
+                <h3 className="text-3xl font-bold text-black mb-2 leading-tight">Let's Work<br />Together</h3>
                 <p className="text-black/70 font-medium">Have a project in mind?</p>
               </div>
               <div className="mt-12">
-                <a 
-                  href="#contact" 
+                <a
+                  href="#contact"
                   className="bg-black text-[#c6ff00] px-6 py-4 rounded-full font-bold inline-flex items-center gap-2 hover:bg-neutral-900 transition-transform hover:scale-105"
                 >
                   <Mail size={20} /> Contact Me

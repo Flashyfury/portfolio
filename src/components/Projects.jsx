@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { ExternalLink, ShoppingBag, HeartPulse, QrCode } from 'lucide-react';
+import { ExternalLink, ShoppingBag, HeartPulse, QrCode, Scissors } from 'lucide-react';
 
 const GithubIcon = () => (
   <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
@@ -8,6 +8,19 @@ const GithubIcon = () => (
 );
 
 const projects = [
+  {
+    id: 0,
+    title: 'Get-a-Cut',
+    description: 'Built a responsive web application featuring 10+ nearby barbershop listings with location-based discovery, reviews, and information. Implemented AI-powered recommendations and waiting-time estimation, reducing manual search effort by 60% and improving appointment planning efficiency by 30%.',
+    tech: ['React', 'Vite', 'JavaScript', 'Python', 'Tailwind CSS', 'AI/ML', 'OpenStreetMap'],
+    github: 'https://github.com/Flashyfury/Get-a-cut',
+    live: 'https://get-a-cut.vercel.app/',
+    gradient: 'from-cyan-400 to-blue-600',
+    glow: 'group-hover:shadow-[0_0_40px_rgba(34,211,238,0.25)]',
+    borderHover: 'group-hover:border-cyan-500/40',
+    iconBg: 'bg-cyan-500/10 text-cyan-400 border border-cyan-500/20',
+    Icon: Scissors
+  },
   {
     id: 1,
     title: 'Jewellery site',
