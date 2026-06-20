@@ -39,14 +39,14 @@ export default function Experience() {
           Experience <span className="text-neutral-500">& Education</span>
         </h2>
 
-        <div className="grid md:grid-cols-2 gap-12">
+        <div className="grid md:grid-cols-2 gap-8">
           {/* Experience Column */}
-          <div>
+          <div className="glass-card p-6 md:p-8">
             <h3 className="text-2xl font-semibold mb-8 flex items-center gap-3">
               <span className="w-2 h-2 rounded-full bg-blue-500"></span>
               Professional
             </h3>
-            <div className="space-y-12">
+            <div className="space-y-10">
               {experiences.map((exp) => (
                 <div key={exp.id} className="relative pl-8 border-l border-neutral-800">
                   <div className="absolute w-4 h-4 rounded-full bg-neutral-900 border border-blue-500 -left-[9px] top-1"></div>
@@ -54,10 +54,10 @@ export default function Experience() {
                     <h4 className="text-xl font-bold text-white">{exp.role}</h4>
                     <span className="text-sm font-medium text-blue-400">{exp.company}</span>
                   </div>
-                  <div className="text-sm text-neutral-500 mb-4 font-mono">
+                  <div className="text-sm text-neutral-400 mb-4 font-mono">
                     {exp.period} • {exp.location}
                   </div>
-                  <ul className="space-y-2 text-neutral-400">
+                  <ul className="space-y-2 text-neutral-300">
                     {exp.description.map((item, index) => (
                       <li key={index} className="flex gap-2">
                         <span className="text-blue-500/50 mt-1.5">•</span>
@@ -71,12 +71,12 @@ export default function Experience() {
           </div>
 
           {/* Education Column */}
-          <div>
+          <div className="glass-card p-6 md:p-8">
             <h3 className="text-2xl font-semibold mb-8 flex items-center gap-3">
               <span className="w-2 h-2 rounded-full bg-purple-500"></span>
               Education
             </h3>
-            <div className="space-y-12">
+            <div className="space-y-10">
               {education.map((edu) => (
                 <div key={edu.id} className="relative pl-8 border-l border-neutral-800">
                   <div className="absolute w-4 h-4 rounded-full bg-neutral-900 border border-purple-500 -left-[9px] top-1"></div>
@@ -84,10 +84,10 @@ export default function Experience() {
                     <h4 className="text-xl font-bold text-white leading-tight mb-1">{edu.degree}</h4>
                     <span className="text-sm font-medium text-purple-400">{edu.institution}</span>
                   </div>
-                  <div className="text-sm text-neutral-500 mb-3 font-mono">
+                  <div className="text-sm text-neutral-400 mb-3 font-mono">
                     {edu.period} • {edu.location}
                   </div>
-                  <p className="text-neutral-400">{edu.details}</p>
+                  <p className="text-neutral-300">{edu.details}</p>
                 </div>
               ))}
             </div>

@@ -33,7 +33,7 @@
   }
   
   .glass-card {
-    @apply bg-[var(--color-dark-surface)]/80 backdrop-blur-sm border border-[var(--color-dark-border)] rounded-2xl;
+    @apply bg-neutral-950/80 backdrop-blur-md border border-neutral-800/60 rounded-[2rem] shadow-xl;
   }
   
   .text-glow {

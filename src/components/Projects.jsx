@@ -94,7 +94,7 @@ export default function Projects() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: index * 0.1 }}
             whileHover={{ y: -10 }}
-            className={`group relative bg-neutral-900/60 backdrop-blur-xl border border-white/5 rounded-[2.5rem] overflow-hidden transition-all duration-500 flex flex-col h-full ${project.glow} ${project.borderHover}`}
+            className={`group relative glass-card overflow-hidden transition-all duration-500 flex flex-col h-full ${project.glow} ${project.borderHover}`}
           >
             {/* Top Gradient Line */}
             <div className={`h-2 w-full bg-gradient-to-r ${project.gradient} transition-all duration-500 opacity-80 group-hover:opacity-100`} />
