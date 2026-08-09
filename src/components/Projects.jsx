@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { ExternalLink, ShoppingBag, HeartPulse, QrCode, Scissors } from 'lucide-react';
+import { ExternalLink, ShoppingBag, HeartPulse, QrCode, Scissors, Brain, BarChart } from 'lucide-react';
 
 const GithubIcon = () => (
   <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
@@ -59,6 +59,32 @@ const projects = [
     borderHover: 'group-hover:border-orange-500/40',
     iconBg: 'bg-orange-500/10 text-orange-400 border border-orange-500/20',
     Icon: QrCode
+  },
+  {
+    id: 4,
+    title: 'TheMindset',
+    description: 'Built a full-stack mental wellness platform for psychologist discovery, psychological assessments, and appointment booking. Implemented searchable directories with many-to-many relationships and detailed profiles. Developed an Assessment Plan for multi-selection before checkout. Integrated Razorpay for secure payments and automated bookings. Created role-based Admin/Psychologist dashboards using Firebase and Firestore.',
+    tech: ['Next.js', 'React', 'TypeScript', 'Firebase', 'Firestore', 'Razorpay', 'Tailwind CSS'],
+    github: 'https://github.com/Flashyfury/TheMindNest',
+    live: '#',
+    gradient: 'from-blue-400 to-indigo-600',
+    glow: 'group-hover:shadow-[0_0_40px_rgba(99,102,241,0.25)]',
+    borderHover: 'group-hover:border-indigo-500/40',
+    iconBg: 'bg-indigo-500/10 text-indigo-400 border border-indigo-500/20',
+    Icon: Brain
+  },
+  {
+    id: 5,
+    title: 'Customer Shopping Analytics',
+    description: 'Conducted a full analytics lifecycle on 3,900 records, including data cleaning, EDA, SQL business queries, and an interactive Power BI dashboard with 4 KPIs and 10 charts. Surfaced key insights showing Clothing as the top revenue category ($233K), subscribed users spending 12–15% more, and discounts driving volume without reducing Average Order Value (AOV).',
+    tech: ['Python', 'Pandas', 'NumPy', 'PostgreSQL', 'Matplotlib', 'Seaborn', 'Power BI'],
+    github: '#',
+    live: '#',
+    gradient: 'from-pink-400 to-fuchsia-600',
+    glow: 'group-hover:shadow-[0_0_40px_rgba(217,70,239,0.25)]',
+    borderHover: 'group-hover:border-fuchsia-500/40',
+    iconBg: 'bg-fuchsia-500/10 text-fuchsia-400 border border-fuchsia-500/20',
+    Icon: BarChart
   }
 ];
 
